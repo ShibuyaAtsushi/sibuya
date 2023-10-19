@@ -10,3 +10,30 @@ WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Ti
 Wed Oct 18 16:32:29 2023
 WARNING: mju_openResource: unknown file '/path/to/mjcf.xml'
 
+Wed Oct 18 18:49:58 2023
+WARNING: Nan, Inf or huge value in QACC at DOF 8. The simulation is unstable. Time = 13707.8700.
+
+Wed Oct 18 19:25:10 2023
+WARNING: Nan, Inf or huge value in QACC at DOF 8. The simulation is unstable. Time = 492.4300.
+
+Wed Oct 18 19:26:38 2023
+ERROR: mjv_updateSceneState: m->nu changed
+
+Wed Oct 18 19:54:58 2023
+ERROR: mjv_updateSceneState: m->nu changed
+
+Wed Oct 18 19:57:44 2023
+ERROR: mjv_updateSceneState: m->nu changed
+
+Wed Oct 18 19:58:06 2023
+WARNING: Nan, Inf or huge value in QACC at DOF 8. The simulation is unstable. Time = 1064.0100.
+
+Wed Oct 18 19:58:16 2023
+ERROR: mjv_updateSceneState: m->nu changed
+
+Wed Oct 18 23:25:50 2023
+ERROR: mjv_updateSceneState: m->nu changed
+
+Thu Oct 19 13:34:53 2023
+ERROR: mjv_updateSceneState: m->nu changed
+
