@@ -1,0 +1,152 @@
+<mujoco>
+    <default>
+        <!-- <joint damping=".03" actuatorforcerange="-0.5 0.5"/> -->
+        <default class="wheel">
+            <geom type="cylinder" size=".0027 .0007" rgba=".5 .5 1 1" />
+        </default>
+    </default>
+
+    <compiler angle="degree" coordinate="local" inertiafromgeom="true" />
+    <option integrator="RK4" timestep="0.01" />
+    <asset>
+        <texture builtin="gradient" height="100" rgb1="1 1 1" rgb2="0 0 0" type="skybox" width="100" />
+        <texture builtin="flat" height="1278" mark="cross" markrgb="1 1 1" name="texgeom"
+            random="0.01" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" type="cube" width="127" />
+        <texture builtin="checker" height="100" name="texplane" rgb1="0 0 0" rgb2="0.8 0.8 0.8"
+            type="2d" width="100" />
+        <material name="MatPlane" reflectance="0.5" shininess="1" specular="1" texrepeat="60 60"
+            texture="texplane" />
+        <material name="geom" texture="texgeom" texuniform="true" />
+    </asset>
+
+    <worldbody>
+
+        <!-- <geom type="plane" size="50 50 .01" rgba="0.6 1 0 1" /> -->
+        <geom conaffinity="1" condim="3" name="floor" friction="0.0 0.0 0.0" pos="0 0 0" rgba="0.8 0.9 0.8 1" size="40 40 40" type="plane"/>
+
+
+        <body pos="0 0 0">
+            <freejoint />
+            <site name="sensor_left_front" type="box" size="0.003 0.003 0.003" pos="0.031 0.036 0.004" zaxis="1 0 0" rgba=".5 1 .5 1"/>
+            <site name="sensor_left_side" type="box" size="0.003 0.003 0.003" pos="0.043 0.016 0.004" zaxis="0.25 1 0" rgba=".5 1 .5 1"/>
+            <site name="sensor_right_front" type="box" size="0.003 0.003 0.003" pos="0.031 -0.036 0.004" zaxis="1 0 0" rgba=".5 1 .5 1"/>
+            <site name="sensor_right_side" type="box" size="0.003 0.003 0.003" pos="0.043 -0.016 0.004" zaxis="0.25 -1 0" rgba=".5 1 .5 1"/>
+            <body>
+                <geom name="mein_body" type="box" size="0.05 0.04 0.0005" friction="0.0 0.0 0.0" rgba="0.05 0.4 0.15 .7" pos="0 0 0.001" />
+                <site name = "hit_box" type = "box" size = "0.02 0.05 0.0005" pos="0.04 0 0.002" rgba=".5 .2 0 .3"/>
+                <site name = "hit_box2" type = "box" size = "0.02 0.05 0.0005" pos="-0.04 0 0.002" rgba=".5 .2 0 .3"/>
+            </body>
+
+
+            <body name="left wheel" pos="-0.0 0.036 0.0135" zaxis="0 1 0">
+                <joint name="left wheel joint" type="hinge" axis="0 0 1" limited="false" />
+                <geom type="cylinder" size="0.0135 0.0035" rgba=".3 .3 0.3 1" />
+                <site type="box" rgba="1 1 1 1" size=".0006 .0036 .0012" />
+            </body>
+
+            <body name="right wheel" pos="-0.0 -0.036 0.0135" zaxis="0 1 0">
+                <joint name="right wheel joint" type="hinge" axis="0 0 1" limited="false" />
+                <geom type="cylinder" size="0.0135 0.0035" rgba=".3 .3 0.3 1" />
+                <site type="box" rgba="1 1 1 1" size=".0006 .0036 .0012" />
+            </body>
+
+            <body name="motorbox1" pos="0 -0.018 0.0135">
+                <geom type="box" size="0.01 0.0135 0.01" rgba="0.1 0.1 0.1 1" />
+            </body>
+
+            <body name="motorbox2" pos="0 0.018 0.0135">
+                <geom type="box" size="0.01 0.0135 0.01" rgba="0.1 0.1 0.1 1" />
+            </body>
+
+        </body>
+    <!-- <site type="box" rgba="1 0 0 0.2" fromto="0 0 0 2 0 0" size="0.02"/>
+    <site type="box" rgba="0 1 0 0.2" fromto="0 0 0 0 2 0" size="0.02"/>
+    <site type="box" rgba="0 0 1 0.2" fromto="0 0 0 0 0 2" size="0.02"/> -->
+
+
+
+        <body name="wall" pos="7 0.0 0">
+                <geom type="box" size="0.1 2 0.3" rgba=".5 .5 1 1" />
+            </body>
+
+        <body name="maze_wall2ss" pos="-0.09 0 0.025">
+                <geom type="box" size="0.005 0.18 0.025" rgba=".5 .5 1 1" />
+            </body>
+<!-- 
+        <body name="side_wall1" pos="0 3 2">
+        <freejoint />
+                <geom type="box" size="2 0.1 0.3" rgba=".5 .5 1 1" />
+            </body> -->
+<!-- 
+        <body name="side_wall2" pos="0 -3 2">
+        <freejoint />
+                <geom type="box" size="2 0.1 0.3" rgba=".5 .5 1 1" />
+            </body> -->
+<!-- 
+        <body name="maze_init_wall_outline" pos="0 0.09 0.025">
+                <geom type="box" size="0.09 0.005 0.025" rgba=".5 .5 .3 0.5" pos="0 -0.18 0.0"/>
+          
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 1" pos="0.18 0 0"/>
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 1" pos="0.36 0 0"/>
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 1" pos="0.54 0 0"/>
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 1" pos="0.72 0 0"/>
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 1" pos="0.90 0 0"/>
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 1" pos="1.08 0 0"/>
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 1" pos="1.26 0 0"/>
+
+                <geom type="box" size="0.005 0.09 0.025" rgba="1 0 0 1" pos="0.81 -0.09 0"/>
+                <geom type="box" size="0.005 0.09 0.025" rgba="1 0 0 1" pos="0.81 -0.18 0"/>
+                <geom type="box" size="0.005 0.09 0.025" rgba="1 0 0 1" pos="0.81 -0.36 0"/>
+                <geom type="box" size="0.005 0.09 0.025" rgba="1 0 0 1" pos="0.81 -0.54 0"/>
+                <geom type="box" size="0.005 0.18 0.025" rgba="1 0 0 1" pos="0.81 -0.72 0"/>
+
+                <geom type="box" size="0.09 0.005 0.025" rgba=".5 .5 .3 0.5" />
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 0.4" pos="0.0 -0.90 0"/>
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 0.4" pos="0.18 -0.90 0"/>
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 0.4" pos="0.36 -0.90 0"/>
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 0.4" pos="0.54 -0.90 0"/>
+                <geom type="box" size="0.09 0.005 0.025" rgba="1 0 0 0.4" pos="0.72 -0.90 0"/>
+
+                <geom type="box" size="0.005 0.09 0.025" rgba=".5 .5 .3 0.5" pos="-0.09 -0.09 0"/>
+                <geom type="box" size="0.005 0.09 0.025" rgba="1 0 0 1" pos="-0.09 -0.18 0"/>
+                <geom type="box" size="0.005 0.09 0.025" rgba="1 0 0 1" pos="-0.09 -0.36 0"/>
+                <geom type="box" size="0.005 0.09 0.025" rgba="1 0 0 1" pos="-0.09 -0.54 0"/>
+                <geom type="box" size="0.005 0.18 0.025" rgba="1 0 0 1" pos="-0.09 -0.72 0"/>
+            </body> -->
+
+
+
+<!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ -->
+
+        <body name="maze_wall2" pos="1.9 -0.09 0.025">
+                <geom type="box" size="8 0.005 0.025" rgba=".5 .5 1 1" />
+            </body>
+            <body name="long_wall2" pos="1.9 0.09 0.025">
+                <geom type="box" size="8 0.005 0.025" rgba=".5 .5 1 1" />
+            </body>
+<!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ -->
+            
+
+            <body name="goal1" pos="7 0 0.045">
+                <geom name="goal" type="sphere" size="0.3" rgba="1 1 0 0.6" />
+            </body>
+     
+
+
+
+
+    </worldbody>
+    <actuator>
+        <motor name="right" joint="right wheel joint" gear="0.0008"/>
+        <motor name="left" joint="left wheel joint" gear="0.0008"/>
+    </actuator>
+
+    <sensor>
+        <rangefinder name="LF" site="sensor_left_front" cutoff="0.20"/>
+        <rangefinder name="LS" site="sensor_left_side" cutoff="0.20"/>
+        <rangefinder name="RF" site="sensor_right_front" cutoff="0.20"/>
+        <rangefinder name="RS" site="sensor_right_side" cutoff="0.20"/>
+        <touch name = "HB" site = "hit_box"/>
+        <touch name = "HB2" site = "hit_box2"/>
+    </sensor>
+</mujoco>
