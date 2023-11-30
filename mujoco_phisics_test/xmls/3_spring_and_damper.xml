@@ -1,0 +1,12 @@
+<mujoco>
+    <compiler angle="degree" coordinate="local" inertiafromgeom="true" />
+    <option integrator="RK4" timestep="0.0001" />
+
+    <worldbody>
+         <light pos="0 -0.5 3"/>
+            <body name="boxx" pos="0 0 0">
+                <geom type="box" size="1 1 1" rgba=".5 .5 1 1" mass="1"/>
+                <joint name='slider' type='slide' pos='0 0 0' axis='1 0 0' stiffness="5" damping="10" springref="0"/>
+            </body>
+    </worldbody>
+</mujoco>

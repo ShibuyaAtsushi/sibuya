@@ -1,0 +1,220 @@
+<mujoco>
+<default>
+    <light castshadow="false" diffuse="0 0 0" />
+    <camera fovy="60" />
+    <site type="sphere" rgba="1 0 0 1" size="0.4"/>
+</default>
+
+<asset>
+
+    <mesh file="ManipulatorDisk_start.STL" />
+    <mesh file="ManipulatorDisk_grob.STL"/>
+    <mesh file="ManipulatorEndDisk.STL"/>
+
+    <texture name="floor_tile" file="meshes/floor_tile.png" width="3000" height="3000" type="2d"/>
+    <material name="tile" texture="floor_tile" specular="0" shininess="0" reflectance="0" emission="1" />
+
+    <material name="carbon" specular="1" shininess="1" reflectance="1" rgba="0.82 0.41 0.12 1" emission="1" />
+    <texture name="foam_blocks" file="meshes/foam_blocks.png" width="2744" height="2744" type="2d"/>
+    <material name="foam" texture="foam_blocks" specular="0" shininess="0" reflectance="0" emission="1" />
+</asset>
+
+<default>
+
+	<default class="G">
+                    <joint type="hinge" limited="true" range="-28.12 28.12" springdamper="0.005 10"/>
+                    </default>
+	<default class="shoko">
+					<geom type="mesh" pos="15 0 0"  euler="90 -90 0" rgba="1 0.5 0.31 1"  mesh="ManipulatorDisk_grob"/>
+					</default>
+	<default class="blue">
+					<geom type="mesh" rgba="0 .31 .61 1" pos="0 0 0"  euler="90 0 0"  mesh="ManipulatorDisk_grob"/>
+					</default>
+    <default class="red">
+					<geom type="mesh" rgba="1 0 0 1" pos="15 0 0"  euler="90 -90 0"  mesh="ManipulatorEndDisk"/>
+					</default>
+
+
+ </default>
+
+<worldbody>
+    <geom name="floor_foam_block" pos="0 0 0" size="100 100 0.1" type="plane" rgba="1 0.83 0.61 1" material="foam"/>
+    <geom name="floor_grey_tile" pos="0 0 -0.001" size="120 120 0.1" type="plane" material="tile"/>
+    <light directional="true" pos="-0.5 0.5 3" dir="0 0 -1" />
+
+    <body name="base_Hand" pos="0 0 0">
+        <geom name="ManipulatorDisk_start" type="mesh" mesh="ManipulatorDisk_start"  pos="0 0 0" euler="90 0 0" material="carbon" />
+        <site name="b0" pos="2.49 -5.23 46"/> <site name="b00" pos="11.39 -3.61 46"/> <site name="b000" pos="9.77 -12.57 46"/>
+
+        <body name="disk1" pos="0 0 48.05">
+             <inertial pos="0 0 0" mass="0.00001" diaginertia="0.3 0.3 0.3"/>
+             <geom name="g1" class="shoko" />
+             <joint name="joint1" pos="0 -7.5 -0.75" class="G" axis="1 0 0"/>
+             <site name="b1" pos="2.49 -5.23 0.9"/> <site name="B1" pos="2.49 -5.23 3.9"/>
+             <site name="b11" pos="11.39 -3.61 1"/> <site name="B11" pos="11.39 -3.61 4"/>
+             <site name="b111" pos="9.77 -12.57 1.2"/> <site name="B111" pos="9.77 -12.57 4.2"/>
+
+             <body name="disk2" pos="0 0 5.738">
+                <inertial pos="0 0 0" mass="0.00001" diaginertia="0.3 0.3 0.3"/>
+                <geom name="g2" class="blue"/>
+                <joint name="joint2" pos="7.5 0 -0.75" class="G"  axis="0 1 0"/>
+                <site name="b2" pos="2.49 -5.23 1.2"/> <site name="B2" pos="2.49 -5.23 4.2"/>
+                <site name="b22" pos="11.39 -3.61 1"/> <site name="B22" pos="11.39 -3.61 4"/>
+                <site name="b222" pos="9.77 -12.57 0.9"/> <site name="B222" pos="9.77 -12.57 3.9"/>
+
+                <body name="disk3" pos="0 0 5.738">
+                    <inertial pos="0 0 0" mass="0.00001" diaginertia="0.3 0.3 0.3"/>
+                    <geom name="g3" class="shoko"/>
+                    <joint name="joint3" pos="0 -7.5 -0.75"  class="G" axis="1 0 0"/>
+                    <site name="b3" pos="2.49 -5.23 0.9"/> <site name="B3" pos="2.49 -5.23 3.9"/>
+                    <site name="b33" pos="11.39 -3.61 1"/> <site name="B33" pos="11.39 -3.61 4"/>
+                    <site name="b333" pos="9.77 -12.57 1.2"/> <site name="B333" pos="9.77 -12.57 4.2"/>
+
+                    <body name="disk4" pos="0 0 5.738">
+                        <inertial pos="0 0 0" mass="0.00001" diaginertia="0.3 0.3 0.3"/>
+                        <geom name="g4" class="blue"/>
+                        <joint name="joint4" pos="7.5 0 -0.75" class="G"  axis="0 1 0"/>
+                        <site name="b4" pos="2.49 -5.23 1.2"/> <site name="B4" pos="2.49 -5.23 4.2"/>
+                        <site name="b44" pos="11.39 -3.61 1"/> <site name="B44" pos="11.39 -3.61 4"/>
+                        <site name="b444" pos="9.77 -12.57 0.9"/> <site name="B444" pos="9.77 -12.57 3.9"/>
+
+                        <body name="disk5" pos="0 0 5.738">
+                            <inertial pos="0 0 0" mass="0.00001" diaginertia="0.3 0.3 0.3"/>
+                            <geom name="g5" class="shoko"/>
+                            <joint name="joint5" pos="0 -7.5 -0.75"  class="G" axis="1 0 0"/>
+                            <site name="b5" pos="2.49 -5.23 0.9"/> <site name="B5" pos="2.49 -5.23 3.9"/>
+                            <site name="b55" pos="11.39 -3.61 1"/> <site name="B55" pos="11.39 -3.61 4"/>
+                            <site name="b555" pos="9.77 -12.57 1.2"/> <site name="B555" pos="9.77 -12.57 4.2"/>
+
+                            <body name="disk6" pos="0 0 5.738">
+                                <inertial pos="0 0 0" mass="0.00001" diaginertia="0.3 0.3 0.3"/>
+                                <geom name="g6" class="blue"/>
+                                <joint name="joint6" pos="7.5 0 -0.75" class="G"  axis="0 1 0" />
+                                <site name="b6" pos="2.49 -5.23 1.2"/> <site name="B6" pos="2.49 -5.23 4.2"/>
+                                <site name="b66" pos="11.39 -3.61 1"/> <site name="B66" pos="11.39 -3.61 4"/>
+                                <site name="b666" pos="9.77 -12.57 0.9"/> <site name="B666" pos="9.77 -12.57 3.9"/>
+
+                                <body name="disk7" pos="0 0 5.738">
+                                    <inertial pos="0 0 0" mass="0.00001" diaginertia="0.3 0.3 0.3"/>
+                                    <geom name="g7" class="shoko"/>
+                                    <joint name="joint7" pos="0 -7.5 -0.75"  class="G" axis="1 0 0"/>
+                                    <site name="b7" pos="2.49 -5.23 0.9"/> <site name="B7" pos="2.49 -5.23 3.9"/>
+                                    <site name="b77" pos="11.39 -3.61 1"/> <site name="B77" pos="11.39 -3.61 4"/>
+                                    <site name="b777" pos="9.77 -12.57 1.2"/> <site name="B777" pos="9.77 -12.57 4.2"/>
+
+                                    <body name="disk8" pos="0 0 5.738">
+                                        <inertial pos="0 0 0" mass="0.00001" diaginertia="0.3 0.3 0.3"/>
+                                        <geom name="g8" class="blue"/>
+                                        <joint name="joint8" pos="7.5 0 -0.75" class="G"  axis="0 1 0" />
+                                        <site name="b8" pos="2.49 -5.23 1.2"/> <site name="B8" pos="2.49 -5.23 4.2"/>
+                                        <site name="b88" pos="11.39 -3.61 1"/> <site name="B88" pos="11.39 -3.61 4"/>
+                                        <site name="b888" pos="9.77 -12.57 0.9"/> <site name="B888" pos="9.77 -12.57 3.9"/>
+
+                                        <body name="disk9" pos="0 0 5.738">
+                                             <inertial pos="0 0 0" mass="0.00001" diaginertia="0.3 0.3 0.3"/>
+                                             <geom name="g9" class="red"/>
+                                             <joint name="joint9" pos="0 -7.5 -0.75"  class="G" axis="1 0 0"/>
+                                             <site name="b9" pos="2.49 -5.23 0.8"/>
+                                             <site name="b99" pos="11.39 -3.61 1"/> <site name="b999" pos="9.77 -12.57 2"/>
+
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+             </body>
+        </body>
+    </body>
+</worldbody>
+
+<contact>
+
+    <pair geom1="ManipulatorDisk_start" geom2="g1" class="G" />
+    <pair geom1="g1" geom2="g2" class="G" />
+    <pair geom1="g2" geom2="g3" class="G" />
+    <pair geom1="g3" geom2="g4" class="G" />
+    <pair geom1="g4" geom2="g5" class="G" />
+    <pair geom1="g5" geom2="g6" class="G" />
+    <pair geom1="g6" geom2="g7" class="G" />
+    <pair geom1="g7" geom2="g8" class="G" />
+    <pair geom1="g8" geom2="g9" class="G" />
+</contact>
+
+<tendon>
+    <spatial name="t1" width="0.2" rgba="2 2 0 1" limited="true" range="35 65">
+        <site site="b0" />
+        <site site="b1" />
+        <site site="B1" />
+        <site site="b2" />
+        <site site="B2" />
+        <site site="b3" />
+        <site site="B3" />
+        <site site="b4" />
+        <site site="B4" />
+        <site site="b5" />
+        <site site="B5" />
+        <site site="b6" />
+        <site site="B6" />
+        <site site="b7" />
+        <site site="B7" />
+        <site site="b8" />
+        <site site="B8" />
+        <site site="b9" />
+
+
+    </spatial>
+
+    <spatial name="t2" width="0.2" rgba="0.6 0.7 0.7 1" limited="true" range="35 65">
+        <site site="b00" />
+        <site site="b11" />
+        <site site="B11" />
+        <site site="b22" />
+        <site site="B22" />
+        <site site="b33" />
+        <site site="B33" />
+        <site site="b44" />
+        <site site="B44" />
+        <site site="b55" />
+        <site site="B55" />
+        <site site="b66" />
+        <site site="B66" />
+        <site site="b77" />
+        <site site="B77" />
+        <site site="b88" />
+        <site site="B88" />
+        <site site="b99" />
+
+    </spatial>
+
+    <spatial name="t3" width="0.2" rgba="1 0 1 1" limited="true" range="35 65">
+        <site site="b000" />
+        <site site="b111" />
+        <site site="B111" />
+        <site site="b222" />
+        <site site="B222" />
+        <site site="b333" />
+        <site site="B333" />
+        <site site="b444" />
+        <site site="B444" />
+        <site site="b555" />
+        <site site="B555" />
+        <site site="b666" />
+        <site site="B666" />
+        <site site="b777" />
+        <site site="B777" />
+        <site site="b888" />
+        <site site="B888" />
+        <site site="b999" />
+
+    </spatial>
+</tendon>
+
+<actuator>
+<motor    name="s1" ctrllimited="true" ctrlrange="-100 0" tendon="t1" gear="100"/>
+<motor    name="s2" ctrllimited="true" ctrlrange="-100 0" tendon="t2" gear="100"/>
+<motor    name="s3" ctrllimited="true" ctrlrange="-100 0" tendon="t3" gear="100"/>
+
+</actuator>
+</mujoco>

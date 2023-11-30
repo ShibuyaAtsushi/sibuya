@@ -1,0 +1,28 @@
+<mujoco>
+    <compiler angle="degree" coordinate="local" inertiafromgeom="true" />
+    <option integrator="RK4" timestep="0.0001" />
+
+    <worldbody>
+         <!-- <light pos="0 -0.5 9" mode="targetbody" target="base"/> -->
+         <light name="light1" diffuse="1 1 1" pos="0 0 1500" dir="0 0 -1" castshadow="false" mode="targetbody" target="base"/>
+         <geom name="ground" type="plane" pos="0 0 -0.2" size="10 10 .2"/>
+         <body name="base" pos="0 0 1">
+          <geom type="cylinder" size="1 1" rgba=".5 .5 1 1"/>
+            <body name="stick1" pos="0 1 1.11"> //わずかに浮かせてます こすれておかしくなっているため 摩擦を０にして解消しようとしましたがダメでした  めり込むのが原因かもしれません
+              <geom type="box" size="0.1 1 0.1" rgba="1 0 0 1"/>
+              <joint name='motor' type='hinge' pos='0 -1 0' axis='0 0 1'/> //モータの先端が回る
+                <body name="stick2" pos="0 1 1.1">
+                  <geom type="box" size="0.1 0.1 1" rgba="0 1 0 1"/>
+                  <joint name='free' type='hinge' pos='0 0 -1' axis='0 1 0'/>
+                    <!-- <joint name='free' type='hinge' pos='0 0 -1' axis='1 0 0' limited="true" range="-180 90"/> -->
+              </body>
+              </body>
+            </body>
+    <site type="box" rgba="1 0 0 0.2" fromto="0 0 0 20 0 0" size="0.2"/>
+    <site type="box" rgba="0 1 0 0.2" fromto="0 0 0 0 20 0" size="0.2"/>
+    <site type="box" rgba="0 0 1 0.2" fromto="0 0 0 0 0 20" size="0.2"/>
+    </worldbody>
+    <actuator>
+        <motor name="right" joint="motor" gear="10000"/>
+    </actuator>
+</mujoco>

@@ -1,0 +1,17 @@
+<mujoco>
+    <compiler angle="degree" coordinate="local" inertiafromgeom="true" />
+    <option integrator="RK4" timestep="0.0001" />
+
+    <worldbody>
+         <light pos="0 -0.5 3"/>
+            <body name="boxx" pos="0 0 0">
+                <geom type="cylinder" size="1.5e-3 6.0e-3" rgba=".5 .5 1 1" zaxis="0 1 0" mass="0.512" />
+                <joint name='motor' type='hinge' pos='0 0 0' axis='0 1 0' damping='3.6e-6'/>
+                <site type="box" size="2e-3 0.5e-3 5e-3" rgba=".2 .6 .2 0.3" zaxis="0 1 0" />
+            </body>
+    </worldbody>
+
+     <actuator>
+        <motor name="motor" joint="motor" gear="1.8e-3"/>
+    </actuator>
+</mujoco>
