@@ -55,3 +55,13 @@ ERROR: mjv_updateSceneState: m->nu changed
 Fri Dec  1 11:26:52 2023
 ERROR: mjv_updateSceneState: m->nu changed
 
+Sun Dec  3 16:04:16 2023
+WARNING: mju_openResource: unknown file '.
+ew_micromouse_straight.xml'
+
+Wed Dec  6 18:28:48 2023
+WARNING: Nan, Inf or huge value in QACC at DOF 6. The simulation is unstable. Time = 0.0001.
+
+Wed Dec  6 18:30:08 2023
+WARNING: Nan, Inf or huge value in QACC at DOF 6. The simulation is unstable. Time = 0.0001.
+
