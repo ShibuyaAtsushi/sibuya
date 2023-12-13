@@ -1,3 +1,5 @@
 {
-    "python.analysis.typeCheckingMode": "off"
+    "python.analysis.typeCheckingMode": "off",
+    "editor.mouseWheelScrollSensitivity": 4,
+    "workbench.list.mouseWheelScrollSensitivity": 5
 }

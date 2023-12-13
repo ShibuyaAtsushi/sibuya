@@ -65,3 +65,9 @@ WARNING: Nan, Inf or huge value in QACC at DOF 6. The simulation is unstable. Ti
 Wed Dec  6 18:30:08 2023
 WARNING: Nan, Inf or huge value in QACC at DOF 6. The simulation is unstable. Time = 0.0001.
 
+Sat Dec  9 13:36:01 2023
+ERROR: mjv_updateSceneState: m->nu changed
+
+Sun Dec 10 17:32:24 2023
+ERROR: mjv_updateSceneState: m->nu changed
+

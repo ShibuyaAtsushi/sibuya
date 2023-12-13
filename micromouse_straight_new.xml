@@ -31,24 +31,24 @@
                 <camera name="camera_name" mode="track" pos="-0.2 0 1" euler="0 -20 -90" fovy="60"/> トラッキングカメラを装着
             </body>
             
-            <site name="sensor_left_front" type="box" size="0.003 0.003 0.003" pos="0.031 0.036 0.01" zaxis="1 0 0.15" rgba=".5 1 .5 1"/>
+            <site name="sensor_left_front" type="box" size="0.003 0.003 0.003" pos="0.031 0.036 0.01" zaxis="1 0 0.08" rgba=".5 1 .5 1"/>
               <!-- zaxisの３つめ　0.1でちょい上向き -->
             <site name="sensor_left_side" type="box" size="0.003 0.003 0.003" pos="0.043 0.016 0.01" zaxis="0.25 1 0" rgba=".5 1 .5 1"/>
-            <site name="sensor_right_front" type="box" size="0.003 0.003 0.003" pos="0.031 -0.036 0.01" zaxis="1 0 0.15" rgba=".5 1 .5 1"/>
+            <site name="sensor_right_front" type="box" size="0.003 0.003 0.003" pos="0.031 -0.036 0.01" zaxis="1 0 0.08" rgba=".5 1 .5 1"/>
             <site name="sensor_right_side" type="box" size="0.003 0.003 0.003" pos="0.043 -0.016 0.01" zaxis="0.25 -1 0" rgba=".5 1 .5 1"/>
             <!-- <site name = "hit_box" type = "box" size = "0.02 0.05 0.0005" pos="0.04 0 0.002" rgba=".5 .2 0 .3"/>
             <site name = "hit_box2" type = "box" size = "0.02 0.05 0.0005" pos="-0.04 0 0.002" rgba=".5 .2 0 .3"/> -->
 
             <!-- <body name="left wheel" pos="-0.0 0.036 0.0117" zaxis="0 1 0"> -->
              <body name="left wheel" pos="-0.0 0.036 0.0125" zaxis="0 1 0">
-                <joint name="left wheel joint" type="hinge" axis="0 0 1" limited="false" damping='3.6e-6' />
+                <joint name="left wheel joint" type="hinge" axis="0 0 1" limited="false" damping='5.4e-5' />
                 
                 <geom type="cylinder" size="0.0135 0.0035" rgba=".3 .3 0.3 1" mass="1.0e-2"/>
                 <site type="box" size = "0.0012 0.008 0.004" rgba=".5 1 .5 1"/>
             </body>
             
             <body name="right wheel" pos="-0.0 -0.036 0.0125" zaxis="0 1 0">
-                <joint name="right wheel joint" type="hinge" axis="0 0 1" limited="false" damping='3.6e-6' />
+                <joint name="right wheel joint" type="hinge" axis="0 0 1" limited="false" damping='5.4e-5' />
                 <geom type="cylinder" size="0.0135 0.0035" rgba=".3 .3 0.3 1" mass="1.0e-2"/>
                 <site type="box" size = "0.0012 0.008 0.004" rgba=".5 1 .5 1"/>
             </body>
@@ -121,20 +121,20 @@
 
 <!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ -->
 
-        <body name="maze_wall2" pos="1.9 -0.145 0.025">
+        <body name="maze_wall2" pos="1.9 -0.1 0.025">
                 <geom type="box" size="8 0.005 0.025" rgba=".5 .5 1 1" />
             </body>
-            <body name="long_wall2" pos="1.9 0.145 0.025">
+            <body name="long_wall2" pos="1.9 0.1 0.025">
                 <geom type="box" size="8 0.005 0.025" rgba=".5 .5 1 1" />
             </body>
 <!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ --><!-- かべかべかべｎ -->
             
 
-            <body name="goal1" pos="2 0 0.045">
+            <!-- <body name="goal1" pos="2 0 0.045">
                 <geom name="goal" type="sphere" size="0.03" rgba="1 1 0 1" />
                 <site name="goal" type="sphere" size="0.15" rgba="0 1 0.2 0.2" />
             </body>
-     
+      -->
 
 
 
@@ -143,8 +143,8 @@
     <actuator>
         <!-- <motor name="right" joint="right wheel joint" gear="1.8e-3" ctrllimited="true" ctrlrange="-3 3"/> ctrlrangeで入力の値の範囲を決められる
         <motor name="left" joint="left wheel joint" gear="1.8e-3" ctrllimited="true" ctrlrange="-3 3"/> -->
-        <motor name="right" joint="right wheel joint" gear="0.9e-2" ctrllimited="true" ctrlrange="-3 3"/> ctrlrangeで入力の値の範囲を決められる
-        <motor name="left" joint="left wheel joint" gear="0.9e-2" ctrllimited="true" ctrlrange="-3 3"/>
+        <motor name="right" joint="right wheel joint" gear="0.3e-2" ctrllimited="true" ctrlrange="-3 3"/> ctrlrangeで入力の値の範囲を決められる
+        <motor name="left" joint="left wheel joint" gear="0.3e-2" ctrllimited="true" ctrlrange="-3 3"/>
     </actuator>
 
     <sensor>
