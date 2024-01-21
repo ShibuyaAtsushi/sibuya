@@ -1,0 +1,6 @@
+PWD c:/Users/atusi/OneDrive/ドキュメント/研究関連（修士）/Github/sibuya
+INPUT c:/texlive/2023/texmf.cnf
+INPUT c:/texlive/2023/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2023/texmf-var/web2c/euptex/platex.fmt
+INPUT c:/Users/atusi/OneDrive/ドキュメント/研究関連（修士）/Github/sibuya/test.tex
+OUTPUT out/test.log

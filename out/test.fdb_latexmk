@@ -1,0 +1,18 @@
+# Fdb version 4
+["dvipdf"] 1705844519 "out/test.dvi" "out/test.pdf" "out/test" 1705844520 0
+  "out/test.dvi" 1705844519 4196 a7baecb3e7b85f595924403d5b575402 "latex"
+  (generated)
+  "out/test.pdf"
+  (rewritten before read)
+["latex"] 1705845892 "c:/Users/atusi/OneDrive/ドキュメント/研究関連（修士）/Github/sibuya/test.tex" "out/test.dvi" "test" 1705845893 2
+  "c:/Users/atusi/OneDrive/ドキュメント/研究関連（修士）/Github/sibuya/test.tex" 1705845892 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1699010398 41009 84b61f42d16d06bedb915f57aa2374cf ""
+  "c:/texlive/2023/texmf-var/web2c/euptex/platex.fmt" 1699017441 8151770 c8b7aba193c1837872f5c25222e50d80 ""
+  "c:/texlive/2023/texmf.cnf" 1699017291 713 e69b156964470283e0530f5060668171 ""
+  "out/test.aux" 1705844519 456 35326a93b0375f205bc05be096569101 "latex"
+  "test.tex" 1705845892 0 d41d8cd98f00b204e9800998ecf8427e ""
+  (generated)
+  "out/test.aux"
+  "out/test.dvi"
+  "out/test.log"
+  (rewritten before read)
