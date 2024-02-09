@@ -1,6 +1,6 @@
 <mujoco model="micromouse">
 <option>
-        <flag sensornoise="enable"/>
+        <!-- <flag sensornoise="enable"/> -->
     </option>
     <worldbody>
         <light diffuse=".5 .5 .5" pos="0 0 10" dir="0 0 -1"/>
@@ -77,10 +77,10 @@
     </actuator>
 
     <sensor>
-        <rangefinder name="LF" site="sensor_left_front" cutoff="0.15"/>
-        <rangefinder name="LS" site="sensor_left_side" cutoff="0.15"/>
-        <rangefinder name="RF" site="sensor_right_front" cutoff="0.15"/>
-        <rangefinder name="RS" site="sensor_right_side" cutoff="0.15"/>
+        <rangefinder name="LF" site="sensor_left_front" cutoff="0.3"/>
+        <rangefinder name="LS" site="sensor_left_side" cutoff="0.3"/>
+        <rangefinder name="RF" site="sensor_right_front" cutoff="0.3"/>
+        <rangefinder name="RS" site="sensor_right_side" cutoff="0.3"/>
         <touch name = "HB1" site = "hit_box1"/>
         <touch name = "HB2" site = "hit_box2"/>
         <accelerometer name="Accel" site="accerometer"/>
