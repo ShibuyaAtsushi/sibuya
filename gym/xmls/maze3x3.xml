@@ -4,7 +4,7 @@
     <option integrator="RK4" />
     <worldbody>
         <!--ベース板-->
-        <body name="base_plate" pos="0.27 0.27 0.01">
+        <body name="base_plate" pos="0.27 0.27 0.013">
         <geom type="plane" mass="0.1" size="0.276 0.276 0.006" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
         </body>
 

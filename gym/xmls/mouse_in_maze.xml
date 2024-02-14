@@ -6,6 +6,7 @@
 </visual>
 
     <include file="./micromouse.xml"/>
-    <include file="./maze3x3.xml"/>
+    <!-- <include file="./maze3x3.xml"/> -->
+    <include file="./mouse_in_maze_for_3_light"/>
 
 </mujoco>
