@@ -1,0 +1,38 @@
+\documentclass[a4paper,11pt]{jsarticle}
+
+
+% 数式
+\usepackage{amsmath,amsfonts}
+\usepackage{bm}
+% 画像
+\usepackage[dvipdfmx]{graphicx}
+
+
+\begin{document}
+
+\title{Stampfly特論　メモ}
+\author{渋谷享史}
+\date{\today}
+\maketitle
+
+\begin{itemize}
+  \item へッダファイルには，他のプログラムに公開したい関数などを書いておく
+  \item cppファイル内の関数を他のプログラムに公開したい場合に，その関数のプロトタイプをヘッダファイルに書いておく
+  \item cppファイル内に保存しておいた関数などは，そのファイルしか見れない
+  \item 
+\end{itemize}
+
+
+変数はextern hogeと書いておいて，宣言だけヘッダファイルに書いておく．
+ヘッダファイルに書いておくことで，他のプログラムからその変数を使うことができる．
+なぜcppとhppに分けるのか．その理由はいくつかある．
+\\分けると，
+\begin{itemize}
+  \item 他のプログラムに公開したりしなかったりを調整することができる．
+  \item プログラムの見通しが良くなる
+  \item 大勢で開発するときに，それぞれ分担作業できるから便利
+\end{itemize}
+
+
+
+\end{document}
