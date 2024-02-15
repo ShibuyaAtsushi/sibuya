@@ -94,12 +94,14 @@ INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-INPUT ./images/20240208.jpg
-INPUT ./images/20240208.jpg
-INPUT ./images/20240208.jpg
-INPUT extractbb -B cropbox -O images/20240208.jpg
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 OUTPUT out/2gatu15_progress.dvi
 INPUT out/2gatu15_progress.aux
