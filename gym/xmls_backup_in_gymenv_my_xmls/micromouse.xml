@@ -10,7 +10,7 @@
         
 
 
-         <body pos="0.09 0.09 0.007" euler="0 0 90">
+         <body pos="0.09 0.09 0.015" euler="0 0 90">
             <freejoint />
             <body name="torso">
                 <geom name="mein_body1" type="box" friction="0.0 0.0 0.0" size="0.05 0.03 0.0008" rgba="0.05 0.4 0.15 1" pos="0 0 0.002" mass="4.65e-3"/>
@@ -21,8 +21,8 @@
                 <geom name="mein_body4" type="box" friction="0.0 0.0 0.0" size="0.013 0.04 0.0008"  rgba="0.05 0.4 0.15 1" pos="-0.027 0 0.002" mass="4.65e-3"/>
                 <geom name="mein_body5" type="box" friction="0.0 0.0 0.0" size="0.013 0.04 0.0008"  rgba="0.05 0.4 0.15 1" pos="0.027 0 0.002" mass="4.65e-3"/>
                 <!--接触判定領域（この中に入ってるgeomが接触すると，センサ値としてその値を取得できる）-->
-                <!-- <site name = "hit_box1" type = "box" size = "0.02 0.043 0.0008" pos="0.032 0 0.003" rgba="1 1 0 0.3"/>
-                <site name = "hit_box2" type = "box" size = "0.02 0.043 0.0008" pos="-0.032 0 0.003" rgba="1 1 0 0.3"/> -->
+                <site name = "hit_box1" type = "box" size = "0.02 0.043 0.00078" pos="0.033 0 0.003" rgba="1 1 0 0.3"/>
+                <site name = "hit_box2" type = "box" size = "0.02 0.043 0.00078" pos="-0.033 0 0.003" rgba="1 1 0 0.3"/>
                 <!-- <site name="velocimeter" type="box" size="0.001 0.001 0.001" pos="0 0 0"/> -->
             </body>
             
@@ -31,8 +31,8 @@
             <site name="sensor_left_side" type="box" size="0.003 0.003 0.003" pos="0.043 0.016 0.01" zaxis="0.25 1 0" rgba=".5 1 .5 1"/>
             <site name="sensor_right_front" type="box" size="0.003 0.003 0.003" pos="0.031 -0.036 0.01" zaxis="1 0 0.01" rgba=".5 1 .5 1"/>
             <site name="sensor_right_side" type="box" size="0.003 0.003 0.003" pos="0.043 -0.016 0.01" zaxis="0.25 -1 0" rgba=".5 1 .5 1"/>
-            <site name = "hit_box1" type = "box" size = "0.02 0.05 0.0005" pos="0.04 0 0.003" rgba=".5 .2 0 .3"/>
-            <site name = "hit_box2" type = "box" size = "0.02 0.05 0.0005" pos="-0.04 0 0.003" rgba=".5 .2 0 .3"/>
+            <!-- <site name = "hit_box1" type = "box" size = "0.02 0.05 0.0005" pos="0.04 0 0.0025" rgba=".5 .2 0 .3"/>
+            <site name = "hit_box2" type = "box" size = "0.02 0.05 0.0005" pos="-0.04 0 0.0025" rgba=".5 .2 0 .3"/> -->
             <site name="accerometer" type="sphere" size="0.001 0.001" pos="0 0 0.0"/>
             <site name="gyro" type="box" size="0.001 0.001 0.001" pos="0 0 0"/>
             <site name="velocimeter" type="box" size="0.001 0.001 0.001" pos="0 0 0"/>

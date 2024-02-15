@@ -1,12 +1,12 @@
 # Fdb version 4
-["dvipdf"] 1707962448 "out/2gatu15_progress.dvi" "out/2gatu15_progress.pdf" "out/2gatu15_progress" 1707962448 0
-  "out/2gatu15_progress.dvi" 1707962448 1484 f16b4fa4780d14a40ea86c0a1c711897 "latex"
+["dvipdf"] 1707997279 "out/2gatu15_progress.dvi" "out/2gatu15_progress.pdf" "out/2gatu15_progress" 1707997280 0
+  "out/2gatu15_progress.dvi" 1707997279 1624 326056f553efe063cfaa81a3e9cee933 "latex"
   (generated)
   "out/2gatu15_progress.pdf"
   (rewritten before read)
-["latex"] 1707962447 "c:/Users/atusi/OneDrive/ドキュメント/研究関連（修士）/Github/sibuya/latex/2gatu15_progress.tex" "out/2gatu15_progress.dvi" "2gatu15_progress" 1707962448 0
-  "2gatu15_progress.tex" 1707962446 1429 39e4359f9f9f9658c04058a7c370ff3f ""
-  "c:/Users/atusi/OneDrive/ドキュメント/研究関連（修士）/Github/sibuya/latex/2gatu15_progress.tex" 1707962446 1429 39e4359f9f9f9658c04058a7c370ff3f ""
+["latex"] 1707997278 "c:/Users/atusi/OneDrive/ドキュメント/研究関連（修士）/Github/sibuya/latex/2gatu15_progress.tex" "out/2gatu15_progress.dvi" "2gatu15_progress" 1707997280 0
+  "2gatu15_progress.tex" 1707997277 1539 6680bfe9ea295afd38cb8c9d9eac8edb ""
+  "c:/Users/atusi/OneDrive/ドキュメント/研究関連（修士）/Github/sibuya/latex/2gatu15_progress.tex" 1707997277 1539 6680bfe9ea295afd38cb8c9d9eac8edb ""
   "c:/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1699012548 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1699012090 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "c:/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1699015537 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -63,7 +63,7 @@
   "c:/texlive/2023/texmf-dist/web2c/texmf.cnf" 1699010398 41009 84b61f42d16d06bedb915f57aa2374cf ""
   "c:/texlive/2023/texmf-var/web2c/euptex/platex.fmt" 1699017441 8151770 c8b7aba193c1837872f5c25222e50d80 ""
   "c:/texlive/2023/texmf.cnf" 1699017291 713 e69b156964470283e0530f5060668171 ""
-  "out/2gatu15_progress.aux" 1707962448 342 5585042b6f96351031d6eeb7fdac2cfc "latex"
+  "out/2gatu15_progress.aux" 1707997279 342 5585042b6f96351031d6eeb7fdac2cfc "latex"
   (generated)
   "out/2gatu15_progress.aux"
   "out/2gatu15_progress.dvi"
