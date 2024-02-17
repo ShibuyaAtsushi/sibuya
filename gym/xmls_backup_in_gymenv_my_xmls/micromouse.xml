@@ -72,8 +72,8 @@
     <actuator>
         <!-- <motor name="right" joint="right wheel joint" gear="1.8e-3" ctrllimited="true" ctrlrange="-3 3"/> ctrlrangeで入力の値の範囲を決められる -->
         <!-- <motor name="left" joint="left wheel joint" gear="1.8e-3" ctrllimited="true" ctrlrange="-3 3"/> -->
-        <motor name="right" joint="right wheel joint" gear="9.0e-3" ctrllimited="true" ctrlrange="-3 3"/> ctrlrangeで入力の値の範囲を決められる
-        <motor name="left"  joint="left wheel joint"  gear="9.0e-3" ctrllimited="true" ctrlrange="-3 3"/>
+        <motor name="right" joint="right wheel joint" gear="9.0e-3" ctrllimited="true" ctrlrange="-1 1"/> ctrlrangeで入力の値の範囲を決められる
+        <motor name="left"  joint="left wheel joint"  gear="9.0e-3" ctrllimited="true" ctrlrange="-1 1"/>
     </actuator>
 
     <sensor>

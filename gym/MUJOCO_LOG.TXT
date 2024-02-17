@@ -268,3 +268,6 @@ WARNING: Nan, Inf or huge value in QVEL at DOF 0. The simulation is unstable. Ti
 Wed Feb 14 19:34:43 2024
 WARNING: Nan, Inf or huge value in QVEL at DOF 0. The simulation is unstable. Time = 0.1000.
 
+Sat Feb 17 13:23:12 2024
+WARNING: mju_openResource: unknown file '../assemble_mouse_mas_rand_training.xml'
+
