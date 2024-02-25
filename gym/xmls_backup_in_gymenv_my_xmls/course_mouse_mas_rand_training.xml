@@ -5,7 +5,7 @@
     <worldbody>
        <!-- ベース板 -->
         <body name="base_plate1" pos="0.27 0.27 0.013">
-        <geom type="box" mass="0.1" size="0.276 0.276 0.006" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        <geom type="box" mass="0.1" size="0.20 0.20 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
         </body>
 
         
@@ -54,7 +54,7 @@
 
         <!--ベース板2-->
         <body name="base_plate2" pos="1.07 0.27 0.013">
-        <geom type="box" mass="0.1" size="0.276 0.276 0.006" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
         </body>
 
 
@@ -105,7 +105,7 @@
 
         <!--ベース板3-->
         <body name="base_plate3" pos="1.87 0.27 0.013">
-        <geom type="box" mass="0.1" size="0.276 0.276 0.006" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
         </body>
 
 
@@ -162,7 +162,7 @@
 
         <!--ベース板4--> 
         <body name="base_plate4" pos="0.27 0.97 0.013">
-        <geom type="box" mass="0.1" size="0.276 0.276 0.006" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
         </body>
 
         
@@ -209,7 +209,7 @@
 
         <!--ベース板5--> 
         <body name="base_plate5" pos="1.07 0.97 0.013">
-        <geom type="box" mass="0.1" size="0.276 0.276 0.006" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
         </body>
 
         
@@ -257,7 +257,7 @@
 
         <!--ベース板6--> 
         <body name="base_plate6" pos="1.87 0.97 0.013">
-        <geom type="box" mass="0.1" size="0.276 0.276 0.006" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
         </body>
 
         
@@ -307,7 +307,7 @@
 
         <!--ベース板7--> 
         <body name="base_plate7" pos="0.27 1.67 0.013">
-        <geom type="box" mass="0.1" size="0.276 0.276 0.006" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
         </body>
 
        
@@ -355,7 +355,7 @@
 
         <!--ベース板8--> 
         <body name="base_plate8" pos="1.07 1.67 0.013">
-        <geom type="box" mass="0.1" size="0.276 0.276 0.006" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
         </body>
 
         
