@@ -1,0 +1,36 @@
+<mujoco>
+    <!-- <default>
+        <joint damping=".03" actuatorforcerange="-0.5 0.5"/>
+    </default> -->
+    <compiler angle="degree" coordinate="local" inertiafromgeom="true" />
+    <option integrator="RK4"/>
+
+    <asset>
+        <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+        <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" markrgb="0.8 0.8 0.8" width="300" height="300"/>
+        <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+    </asset>
+
+    <worldbody>
+        <geom type="plane" size="400 400 .01" material="groundplane" friction="0 0 0"/>
+        <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
+
+        <body name="back_wall" pos="0.09 0 0.025" >
+            <geom type="box" size="0.18 0.005 0.025" rgba="0.4 0 0 1" />
+        </body>
+        <body name="right_wall" pos="0.18 0 0.025">
+            <geom type="box" size="0.005 8 0.025" rgba=".5 .5 1 1" />
+        </body>
+        <body name="left_wall" pos="0.0 0 0.025">
+            <geom type="box" size="0.005 8 0.025" rgba=".5 .5 1 1" />
+        </body>
+
+        <site type="box" rgba="1 0 0 0.1" fromto="0 0 0 2 0 0" size="0.01"/>
+        <site type="box" rgba="0 1 0 0.1" fromto="0 0 0 0 2 0" size="0.01"/>
+        <site type="box" rgba="0 0 1 0.1" fromto="0 0 0 0 0 2" size="0.01"/> 座標軸表示
+
+
+
+    </worldbody>
+   
+</mujoco>

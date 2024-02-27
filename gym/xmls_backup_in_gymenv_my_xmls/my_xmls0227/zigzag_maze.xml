@@ -1,0 +1,540 @@
+<mujoco model="maze">
+    <worldbody>
+        <!--�x�[�X��-->
+        <body name="base_plate" pos="1.44 0.72 0.012">
+        <geom type="plane" mass="0.1" size="1.446 0.726 0.006" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        </body>
+
+        
+
+        <!-- Wall 1.1-->
+        <body pos="0.09 -0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 1.2-->
+        <body pos="0.0 -0.093 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 1.3-->
+        <body pos="0.18 -0.093 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        
+
+        <!-- Wall 2-->
+        <body pos="0.27 0.0 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 3-->
+        <body pos="0.44999999999999996 0.0 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 4-->
+        <body pos="0.63 0.0 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 5-->
+        <body pos="0.8099999999999999 0.0 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 6-->
+        <body pos="0.09 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 7-->
+        <body pos="0.27 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 8-->
+        <body pos="0.44999999999999996 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 9-->
+        <body pos="0.63 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 10-->
+        <body pos="0.9899999999999999 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 11-->
+        <body pos="0.8099999999999999 0.36 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 12-->
+        <body pos="1.1700000000000002 0.36 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 13-->
+        <body pos="0.9899999999999999 0.54 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 14-->
+        <body pos="1.35 0.54 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 15-->
+        <body pos="1.1700000000000002 0.72 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 16-->
+        <body pos="1.53 0.72 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 17-->
+        <body pos="1.35 0.8999999999999999 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 18-->
+        <body pos="1.71 0.8999999999999999 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 19-->
+        <body pos="1.53 1.08 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 20-->
+        <body pos="1.89 1.08 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 21-->
+        <body pos="1.71 1.26 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 22-->
+        <body pos="2.07 1.26 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 23-->
+        <body pos="2.25 1.26 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 24-->
+        <body pos="2.4299999999999997 1.26 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 25-->
+        <body pos="2.61 1.26 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 26-->
+        <body pos="1.89 1.44 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 27-->
+        <body pos="2.07 1.44 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 28-->
+        <body pos="2.25 1.44 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 28.5-->
+        <body pos="2.435 1.44 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 29-->
+        <body pos="2.61 1.44 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.093 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 30-->
+        <body pos="0.0 0.09 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 31-->
+        <body pos="0.8999999999999999 0.09 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 32-->
+        <body pos="0.72 0.27 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 33-->
+        <body pos="1.08 0.27 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 34-->
+        <body pos="0.8999999999999999 0.44999999999999996 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 35-->
+        <body pos="1.26 0.44999999999999996 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 36-->
+        <body pos="1.08 0.63 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 37-->
+        <body pos="1.44 0.63 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 38-->
+        <body pos="1.26 0.8099999999999999 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 39-->
+        <body pos="1.6199999999999999 0.8099999999999999 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 40-->
+        <body pos="1.44 0.9899999999999999 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 41-->
+        <body pos="1.7999999999999998 0.9899999999999999 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 42-->
+        <body pos="1.6199999999999999 1.1700000000000002 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 43-->
+        <body pos="1.98 1.1700000000000002 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 44-->
+        <body pos="1.7999999999999998 1.35 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- Wall 45-->
+        <body pos="2.6999999999999997 1.35 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--�Ǐ�ԊW-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.093 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+    </worldbody>
+</mujoco>
