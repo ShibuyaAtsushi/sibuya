@@ -622,3 +622,9 @@ ERROR: mjv_updateSceneState: m->nu changed
 Wed Feb 28 15:35:14 2024
 ERROR: mjv_updateSceneState: m->nu changed
 
+Wed Feb 28 16:28:09 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Wed Feb 28 17:36:18 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
