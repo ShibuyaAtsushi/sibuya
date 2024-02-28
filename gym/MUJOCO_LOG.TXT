@@ -595,3 +595,9 @@ ERROR: mjv_updateSceneState: m->nu changed
 Tue Feb 27 15:42:16 2024
 ERROR: mjv_updateSceneState: m->nu changed
 
+Tue Feb 27 17:34:02 2024
+WARNING: mju_openResource: unknown file 'c:\Users\atusi\anaconda3\envs\gymenv\Lib\site-packages\gymnasium\envs\mujoco\assets\my_xmls/./body_Left_lotation.xml'
+
+Wed Feb 28 10:18:39 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
