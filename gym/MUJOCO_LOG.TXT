@@ -631,3 +631,123 @@ ERROR: mjv_updateSceneState: m->nu changed
 Thu Feb 29 16:02:37 2024
 ERROR: mjv_updateSceneState: m->nu changed
 
+Fri Mar  1 12:32:56 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 12:34:55 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 12:37:40 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 12:38:11 2024
+WARNING: mju_openResource: unknown file 'c:\Users\atusi\anaconda3\envs\gymenv\Lib\site-packages\gymnasium\envs\mujoco\assets\my_xmls/./randomwall_gen.xml'
+
+Fri Mar  1 12:42:18 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 12:45:24 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 12:47:08 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 12:48:11 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 13:09:57 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 13:14:42 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 13:16:37 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 13:18:31 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 13:46:46 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 13:49:52 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 13:57:29 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 14:06:50 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 14:24:38 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 14:43:24 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 14:44:25 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 15:44:03 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 15:51:32 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 15:58:49 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 16:03:28 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 16:23:28 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 16:26:05 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 16:44:12 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 16:57:08 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:02:51 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:05:47 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:10:10 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:18:10 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:26:45 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:27:51 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:30:04 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:39:21 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:41:10 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:44:01 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:47:48 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:48:17 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
+Fri Mar  1 17:50:09 2024
+ERROR: mjv_updateSceneState: m->nu changed
+
