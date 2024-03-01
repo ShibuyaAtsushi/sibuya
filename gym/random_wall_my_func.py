@@ -428,9 +428,9 @@ f.close() #わざわざ閉じる必要はなさそう？
 f2 = open('c:/Users/atusi/anaconda3/envs/gymenv/Lib/site-packages/gymnasium/envs/mujoco/assets/my_xmls/randomwall_gen.xml', 'a')
 
 
-
+kakuritu = 0.5
 # 50%の確率で壁を作る
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
     <body pos="0.09 0.0 0.037">
         <body pos="0 0 -0.0005">
@@ -443,7 +443,7 @@ if random.random() < 0.65:
     </body>
           ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.27 0.0 0.037">
       <body pos="0 0 -0.0005">
@@ -456,7 +456,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
             <body pos="0.09 0.18 0.037">
       <body pos="0 0 -0.0005">
@@ -469,7 +469,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.44999999999999996 0.18 0.037">
       <body pos="0 0 -0.0005">
@@ -482,7 +482,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.27 0.36 0.037">
       <body pos="0 0 -0.0005">
@@ -495,7 +495,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.63 0.36 0.037">
       <body pos="0 0 -0.0005">
@@ -508,7 +508,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.44999999999999996 0.54 0.037">
       <body pos="0 0 -0.0005">
@@ -521,7 +521,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.8099999999999999 0.54 0.037">
       <body pos="0 0 -0.0005">
@@ -534,7 +534,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.63 0.72 0.037">
       <body pos="0 0 -0.0005">
@@ -547,7 +547,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.9899999999999999 0.72 0.037">
       <body pos="0 0 -0.0005">
@@ -560,7 +560,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.8099999999999999 0.8999999999999999 0.037">
       <body pos="0 0 -0.0005">
@@ -573,7 +573,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.1700000000000002 0.8999999999999999 0.037">
       <body pos="0 0 -0.0005">
@@ -586,7 +586,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.9899999999999999 1.08 0.037">
       <body pos="0 0 -0.0005">
@@ -599,7 +599,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.35 1.08 0.037">
       <body pos="0 0 -0.0005">
@@ -612,7 +612,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.1700000000000002 1.26 0.037">
       <body pos="0 0 -0.0005">
@@ -625,7 +625,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.53 1.26 0.037">
       <body pos="0 0 -0.0005">
@@ -638,7 +638,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.71 1.26 0.037">
       <body pos="0 0 -0.0005">
@@ -651,7 +651,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.35 1.44 0.037">
       <body pos="0 0 -0.0005">
@@ -664,7 +664,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.53 1.44 0.037">
       <body pos="0 0 -0.0005">
@@ -677,7 +677,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.71 1.44 0.037">
       <body pos="0 0 -0.0005">
@@ -690,7 +690,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.0 0.09 0.037">
       <body pos="0 0 -0.0005">
@@ -703,7 +703,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.36 0.09 0.037">
       <body pos="0 0 -0.0005">
@@ -716,7 +716,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.18 0.27 0.037">
       <body pos="0 0 -0.0005">
@@ -729,7 +729,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.54 0.27 0.037">
       <body pos="0 0 -0.0005">
@@ -742,7 +742,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.36 0.44999999999999996 0.037">
       <body pos="0 0 -0.0005">
@@ -755,7 +755,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.72 0.44999999999999996 0.037">
       <body pos="0 0 -0.0005">
@@ -768,7 +768,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.54 0.63 0.037">
       <body pos="0 0 -0.0005">
@@ -781,7 +781,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.8999999999999999 0.63 0.037">
       <body pos="0 0 -0.0005">
@@ -794,7 +794,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.72 0.8099999999999999 0.037">
       <body pos="0 0 -0.0005">
@@ -807,7 +807,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.08 0.8099999999999999 0.037">
       <body pos="0 0 -0.0005">
@@ -820,7 +820,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="0.8999999999999999 0.9899999999999999 0.037">
       <body pos="0 0 -0.0005">
@@ -833,7 +833,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.26 0.9899999999999999 0.037">
       <body pos="0 0 -0.0005">
@@ -846,7 +846,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.08 1.1700000000000002 0.037">
       <body pos="0 0 -0.0005">
@@ -859,7 +859,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.44 1.1700000000000002 0.037">
       <body pos="0 0 -0.0005">
@@ -872,7 +872,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.26 1.35 0.037">
       <body pos="0 0 -0.0005">
@@ -885,7 +885,7 @@ if random.random() < 0.65:
   </body>
         ''')
 
-if random.random() < 0.65:
+if random.random() < kakuritu:
   f2.write('''
   <body pos="1.7999999999999998 1.35 0.037">
       <body pos="0 0 -0.0005">
@@ -1344,7 +1344,7 @@ def random_wall_create():
 
 
     # 50%の確率で壁を作る
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
         <body pos="0.09 0.0 0.037">
             <body pos="0 0 -0.0005">
@@ -1357,7 +1357,7 @@ def random_wall_create():
         </body>
               ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.27 0.0 0.037">
           <body pos="0 0 -0.0005">
@@ -1370,7 +1370,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
                 <body pos="0.09 0.18 0.037">
           <body pos="0 0 -0.0005">
@@ -1383,7 +1383,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.44999999999999996 0.18 0.037">
           <body pos="0 0 -0.0005">
@@ -1396,7 +1396,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.27 0.36 0.037">
           <body pos="0 0 -0.0005">
@@ -1409,7 +1409,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.63 0.36 0.037">
           <body pos="0 0 -0.0005">
@@ -1422,7 +1422,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.44999999999999996 0.54 0.037">
           <body pos="0 0 -0.0005">
@@ -1435,7 +1435,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.8099999999999999 0.54 0.037">
           <body pos="0 0 -0.0005">
@@ -1448,7 +1448,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.63 0.72 0.037">
           <body pos="0 0 -0.0005">
@@ -1461,7 +1461,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.9899999999999999 0.72 0.037">
           <body pos="0 0 -0.0005">
@@ -1474,7 +1474,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.8099999999999999 0.8999999999999999 0.037">
           <body pos="0 0 -0.0005">
@@ -1487,7 +1487,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.1700000000000002 0.8999999999999999 0.037">
           <body pos="0 0 -0.0005">
@@ -1500,7 +1500,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.9899999999999999 1.08 0.037">
           <body pos="0 0 -0.0005">
@@ -1513,7 +1513,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.35 1.08 0.037">
           <body pos="0 0 -0.0005">
@@ -1526,7 +1526,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.1700000000000002 1.26 0.037">
           <body pos="0 0 -0.0005">
@@ -1539,7 +1539,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.53 1.26 0.037">
           <body pos="0 0 -0.0005">
@@ -1552,7 +1552,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.71 1.26 0.037">
           <body pos="0 0 -0.0005">
@@ -1565,7 +1565,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.35 1.44 0.037">
           <body pos="0 0 -0.0005">
@@ -1578,7 +1578,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.53 1.44 0.037">
           <body pos="0 0 -0.0005">
@@ -1591,7 +1591,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.71 1.44 0.037">
           <body pos="0 0 -0.0005">
@@ -1604,7 +1604,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.0 0.09 0.037">
           <body pos="0 0 -0.0005">
@@ -1617,7 +1617,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.36 0.09 0.037">
           <body pos="0 0 -0.0005">
@@ -1630,7 +1630,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.18 0.27 0.037">
           <body pos="0 0 -0.0005">
@@ -1643,7 +1643,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.54 0.27 0.037">
           <body pos="0 0 -0.0005">
@@ -1656,7 +1656,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.36 0.44999999999999996 0.037">
           <body pos="0 0 -0.0005">
@@ -1669,7 +1669,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.72 0.44999999999999996 0.037">
           <body pos="0 0 -0.0005">
@@ -1682,7 +1682,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.54 0.63 0.037">
           <body pos="0 0 -0.0005">
@@ -1695,7 +1695,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.8999999999999999 0.63 0.037">
           <body pos="0 0 -0.0005">
@@ -1708,7 +1708,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.72 0.8099999999999999 0.037">
           <body pos="0 0 -0.0005">
@@ -1721,7 +1721,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.08 0.8099999999999999 0.037">
           <body pos="0 0 -0.0005">
@@ -1734,7 +1734,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="0.8999999999999999 0.9899999999999999 0.037">
           <body pos="0 0 -0.0005">
@@ -1747,7 +1747,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.26 0.9899999999999999 0.037">
           <body pos="0 0 -0.0005">
@@ -1760,7 +1760,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.08 1.1700000000000002 0.037">
           <body pos="0 0 -0.0005">
@@ -1773,7 +1773,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.44 1.1700000000000002 0.037">
           <body pos="0 0 -0.0005">
@@ -1786,7 +1786,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.26 1.35 0.037">
           <body pos="0 0 -0.0005">
@@ -1799,7 +1799,7 @@ def random_wall_create():
       </body>
             ''')
 
-    if random.random() < 0.65:
+    if random.random() < kakuritu:
       f2.write('''
       <body pos="1.7999999999999998 1.35 0.037">
           <body pos="0 0 -0.0005">
