@@ -1,0 +1,12 @@
+<mujoco>
+<compiler angle="degree" coordinate="local" inertiafromgeom="true" />
+    <option integrator="RK4" timestep="0.01" />
+    <visual>
+   <quality shadowsize="0" />
+</visual>
+
+    <include file="./body_Left_lotation.xml"/>
+    <include file="./course_Left_lotation.xml"/>
+    <!-- <include file="./mouse_in_maze_for_3_light"/> -->
+
+</mujoco>

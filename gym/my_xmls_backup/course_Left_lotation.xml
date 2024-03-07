@@ -1,0 +1,107 @@
+<mujoco model="maze">
+<compiler angle="degree" coordinate="local" inertiafromgeom="true" />
+    <!-- <option integrator="RK4" timestep="0.001" /> -->
+    <option integrator="RK4" />
+    <worldbody>
+       <!-- ベース板 -->
+        <body name="base_plate1" pos="0.27 0.27 0.013">
+        <geom type="plane" mass="0.1" size="0.20 0.20 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        </body>
+
+        
+        <!-- Column 1-6-->
+        <body pos="0.18 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 1-7-->
+        <body pos="0.36 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 2-10-->
+        <body pos="0.18 0.36 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 1-11-->
+        <body pos="0.36 0.36 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        
+
+
+        
+        <!-- #############################基本コースここまで###############################-->
+        <!-- #############################基本コースここまで###############################-->
+        <!-- #############################基本コースここまで###############################-->
+
+
+
+        <!-- #############################ランダム出現用壁の定義###############################-->
+        <!-- #############################ランダム出現用壁の定義###############################-->
+        <!-- #############################ランダム出現用壁の定義###############################-->
+        <!-- #############################ランダム出現用壁の定義###############################-->
+
+
+
+        <!-- #############################コース1###############################-->
+        <!-- #############################コース1###############################-->
+
+        <!-- Wall 1-左-->
+        <body pos="0.18 0.27 0.037" name="1-left_wall">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 0 1"/>
+                <joint type="slide" axis="1 0 0" range="-0.5 0.0" limited="true"/>
+            </body>
+        </body>
+        
+        <!-- Wall 1-前-->
+        <body pos="0.27 0.36 0.037" name="1-forward_wall">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.084 0.006 0.0245" rgba="1 1 1 1"/>
+                <joint type="slide" axis="0 1 0" range="0.0 0.5" limited="true"/>
+            </body>
+        </body>
+
+        <!-- Wall 1-右 -->
+        <body pos="0.36 0.27 0.037" name="1-right_wall">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 0 1"/>
+                <joint type="slide" axis="1 0 0" range="0.0 0.5" limited="true"/>
+            </body>
+        </body>
+
+        <!-- Wall 1-後ろ -->
+        <body pos="0.27 0.18 0.037" name="1-back_wall">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.084 0.006 0.0245" rgba="1 1 1 1"/>
+                <joint type="slide" axis="0 1 0" range="-0.5 0.0" limited="true"/>
+            </body>
+        </body>
+
+
+        
+    </worldbody>
+</mujoco>

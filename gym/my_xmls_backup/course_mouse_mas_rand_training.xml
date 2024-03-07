@@ -1,0 +1,781 @@
+<mujoco model="maze">
+<compiler angle="degree" coordinate="local" inertiafromgeom="true" />
+    <!-- <option integrator="RK4" timestep="0.001" /> -->
+    <option integrator="RK4" />
+    <worldbody>
+       <!-- ベース板 -->
+        <body name="base_plate1" pos="0.27 0.27 0.013">
+        <geom type="box" mass="0.1" size="0.20 0.20 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        </body>
+
+        
+        <!-- Column 1-6-->
+        <body pos="0.18 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 1-7-->
+        <body pos="0.36 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 2-10-->
+        <body pos="0.18 0.36 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 1-11-->
+        <body pos="0.36 0.36 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        
+
+
+        <!--ベース板2-->
+        <body name="base_plate2" pos="1.07 0.27 0.013">
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        </body>
+
+
+        <!-- Column 2-6-->
+        <body pos="0.98 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 2-7-->
+        <body pos="1.16 0.18 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 2-10-->
+        <body pos="0.98 0.36 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 2-11-->
+        <body pos="1.16 0.36 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+     
+
+
+
+
+        <!--ベース板3-->
+        <body name="base_plate3" pos="1.87 0.27 0.013">
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        </body>
+
+
+        <!-- Column 3-6-->
+        <body pos="1.78 0.18 0.037">
+            <body pos="0.0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0.0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 3-7-->
+        <body pos="1.96 0.18 0.037">
+            <body pos="0.0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0.0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 3-10-->
+        <body pos="1.78 0.36 0.037">
+            <body pos="0.0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0.0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 3-11-->
+        <body pos="1.96 0.36 0.037">
+            <body pos="0.0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0.0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- #############################Y軸方向に増やす###############################-->
+        <!-- #############################Y軸方向に増やす###############################-->
+        <!-- #############################Y軸方向に増やす###############################-->
+        <!-- #############################Y軸方向に増やす###############################-->
+        <!-- #############################Y軸方向に増やす###############################-->
+        <!-- #############################Y軸方向に増やす###############################-->
+        <!-- #############################Y軸方向に増やす###############################-->
+        <!-- #############################Y軸方向に増やす###############################-->
+
+
+        <!--ベース板4--> 
+        <body name="base_plate4" pos="0.27 0.97 0.013">
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        </body>
+
+        
+        <!-- Column 4-6-->
+        <body pos="0.18 0.88 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 4-7-->
+        <body pos="0.36 0.88 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 4-10-->
+        <body pos="0.18 1.06 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 4-11-->
+        <body pos="0.36 1.06 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!--ベース板5--> 
+        <body name="base_plate5" pos="1.07 0.97 0.013">
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        </body>
+
+        
+        <!-- Column 5-6-->
+        <body pos="0.98 0.88 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 5-7-->
+        <body pos="1.16 0.88 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 5-10-->
+        <body pos="0.98 1.06 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 5-11-->
+        <body pos="1.16 1.06 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        
+
+        <!--ベース板6--> 
+        <body name="base_plate6" pos="1.87 0.97 0.013">
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        </body>
+
+        
+        <!-- Column 6-6-->
+        <body pos="1.78 0.88 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 6-7-->
+        <body pos="1.96 0.88 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 6-10-->
+        <body pos="1.78 1.06 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 6-11-->
+        <body pos="1.96 1.06 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        
+
+        <!-- #############################3列目###############################-->
+
+        <!--ベース板7--> 
+        <body name="base_plate7" pos="0.27 1.67 0.013">
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        </body>
+
+       
+        <!-- Column 7-6-->
+        <body pos="0.18 1.58 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 7-7-->
+        <body pos="0.36 1.58 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 7-10-->
+        <body pos="0.18 1.76 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 7-11-->
+        <body pos="0.36 1.76 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        
+
+        <!--ベース板8--> 
+        <body name="base_plate8" pos="1.07 1.67 0.013">
+        <geom type="box" mass="0.1" size="0.2 0.2 0.004" rgba="0.2 0.2 0.2 1" friction="0.0 0.0 0.0"/>
+        </body>
+
+        
+        <!-- Column 8-6-->
+        <body pos="0.98 1.58 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 8-7-->
+        <body pos="1.16 1.58 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 8-10-->
+        <body pos="0.98 1.76 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Column 8-11-->
+        <body pos="1.16 1.76 0.037">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--柱上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+
+        <!-- #############################基本コースここまで###############################-->
+        <!-- #############################基本コースここまで###############################-->
+        <!-- #############################基本コースここまで###############################-->
+        <!-- #############################基本コースここまで###############################-->
+
+
+
+        <!-- #############################ランダム出現用壁の定義###############################-->
+        <!-- #############################ランダム出現用壁の定義###############################-->
+        <!-- #############################ランダム出現用壁の定義###############################-->
+        <!-- #############################ランダム出現用壁の定義###############################-->
+
+
+
+        <!-- #############################コース1###############################-->
+        <!-- #############################コース1###############################-->
+        <!-- Wall 1-左-->
+        <body pos="0.18 0.27 0.037" name="1-forward_wall">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--壁上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Wall 1-前-->
+        <body pos="0.27 0.36 0.037" name="1-left_wall">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.084 0.006 0.0245" rgba="1 1 1 1"/>
+            </body>
+            <!--壁上赤蓋-->
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.084 0.006 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body>
+        <!-- Wall 1-右
+        <body pos="0.36 0.27 0.037" name="1-right_wall">
+            <body pos="0 0 -0.0005">
+                <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+            </body>
+            壁上赤蓋
+            <body pos="0 0 0.0245">
+                <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+            </body>
+        </body> -->
+
+        <!-- ###ゴール### -->
+        <geom type="cylinder" name="goal_1" pos="0.45 0.27 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+        <site type="cylinder" name="goal_1" pos="0.45 0.27 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+
+
+    <!-- #############################コース2###############################-->
+<!-- #############################コース2###############################-->
+
+<!-- Wall 2-左-->
+<body pos="0.98 0.27 0.037" name="2-forward_wall">
+    <!-- 子bodyは変更なし -->
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    <!--壁上赤蓋-->
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+<!-- Wall 2-前
+<body pos="1.07 0.36 0.037" name="2-left_wall">
+    
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body> -->
+
+<!-- Wall 2-右-->
+<body pos="1.16 0.27 0.037" name="2-right_wall">
+    <!-- 子bodyは変更なし -->
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    <!--壁上赤蓋-->
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+<!-- ###ゴール### -->
+<geom type="cylinder" name="goal_2" pos="1.07 0.45 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<site type="cylinder" name="goal_2" pos="1.07 0.45 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+
+
+
+
+
+    <!-- #############################コース3###############################-->
+<!-- #############################コース3###############################-->
+
+<!-- Wall 3-左
+<body pos="1.78 0.27 0.037" name="3-forward_wall">
+    
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body> -->
+
+<!-- Wall 3-前-->
+<body pos="1.87 0.36 0.037" name="3-left_wall">
+    <!-- 子bodyは変更なし -->
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0245" rgba="1 1 1 1"/>
+    </body>
+    <!--壁上赤蓋-->
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+<!-- Wall 3-右-->
+<body pos="1.96 0.27 0.037" name="3-right_wall">
+    <!-- 子bodyは変更なし -->
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    <!--壁上赤蓋-->
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+<!-- ###ゴール### -->
+<geom type="cylinder" name="goal_3" pos="1.69 0.27 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<site type="cylinder" name="goal_3" pos="1.69 0.27 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+
+        <!-- #############################コース4###############################-->
+        <!-- #############################コース4###############################-->
+<!-- #############################コース4###############################-->
+
+<!-- Wall 4-左-->
+<body pos="0.18 0.97 0.037" name="4-forward_wall">
+    <!-- 子bodyは変更なし -->
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    <!--壁上赤蓋-->
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+ <!-- Wall 4-前
+<body pos="0.27 1.06 0.037" name="4-left_wall">
+     子bodyは変更なし 
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+ Wall 4-右
+<body pos="0.36 0.97 0.037" name="4-right_wall">
+     子bodyは変更なし 
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body> -->
+
+<!-- ###ゴール### -->
+<geom type="cylinder" name="goal_4" pos="0.45 0.97 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<site type="cylinder" name="goal_4" pos="0.45 0.97 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<geom type="cylinder" name="goal_4-2" pos="0.27 1.15 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<site type="cylinder" name="goal_4-2" pos="0.27 1.15 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+
+<!-- #############################コース5###############################-->
+<!-- #############################コース5###############################-->
+
+ <!-- Wall 5-左
+<body pos="0.98 0.97 0.037" name="5-forward_wall">
+     子bodyは変更なし 
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body> -->
+
+<!-- Wall 5-前-->
+<body pos="1.07 1.06 0.037" name="5-left_wall">
+    <!-- 子bodyは変更なし -->
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0245" rgba="1 1 1 1"/>
+    </body>
+    <!--壁上赤蓋-->
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+ <!-- Wall 5-右
+<body pos="1.16 0.97 0.037" name="5-right_wall">
+     子bodyは変更なし 
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body> -->
+
+<!-- ###ゴール### -->
+<geom type="cylinder" name="goal_5" pos="1.25 0.97 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<site type="cylinder" name="goal_5" pos="1.25 0.97 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<geom type="cylinder" name="goal_5-2" pos="0.89 0.97 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<site type="cylinder" name="goal_5-2" pos="0.89 0.97 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+
+
+<!-- #############################コース6###############################-->
+<!-- #############################コース6###############################-->
+
+ <!-- Wall 6-左
+<body pos="1.78 0.97 0.037" name="6-forward_wall">
+     子bodyは変更なし 
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+ Wall 6-前
+<body pos="1.87 1.06 0.037" name="6-left_wall">
+     子bodyは変更なし 
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body> -->
+
+<!-- Wall 6-右-->
+<body pos="1.96 0.97 0.037" name="6-right_wall">
+    <!-- 子bodyは変更なし -->
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    <!--壁上赤蓋-->
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+<!-- ###ゴール### -->
+<geom type="cylinder" name="goal_6" pos="1.69 0.97 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<site type="cylinder" name="goal_6" pos="1.69 0.97 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<geom type="cylinder" name="goal_6-2" pos="1.87 1.15 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<site type="cylinder" name="goal_6-2" pos="1.87 1.15 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+
+
+<!-- #############################コース7###############################-->
+<!-- #############################コース7###############################-->
+
+<!-- Wall 7-左
+<body pos="0.18 1.67 0.037" name="7-forward_wall">
+    子bodyは変更なし 
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+Wall 7-前
+<body pos="0.27 1.76 0.037" name="7-left_wall">
+    子bodyは変更なし 
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+Wall 7-右
+<body pos="0.36 1.67 0.037" name="7-right_wall">
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    壁上赤蓋
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body> -->
+
+<!-- ###ゴール### -->
+<geom type="cylinder" name="goal_7" pos="0.45 1.67 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<site type="cylinder" name="goal_7" pos="0.45 1.67 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+
+<!-- #############################コース8###############################-->
+<!-- #############################コース8###############################-->
+
+<!-- Wall 8-左-->
+<body pos="0.98 1.67 0.037" name="8-forward_wall">
+    <!-- 子bodyは変更なし -->
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    <!--壁上赤蓋-->
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+<!-- Wall 8-前-->
+<body pos="1.07 1.76 0.037" name="8-left_wall">
+    <!-- 子bodyは変更なし -->
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0245" rgba="1 1 1 1"/>
+    </body>
+    <!--壁上赤蓋-->
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.084 0.006 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+<!-- Wall 8-右-->
+<body pos="1.16 1.67 0.037" name="8-right_wall">
+    <!-- 子bodyは変更なし -->
+    <body pos="0 0 -0.0005">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0245" rgba="1 1 1 1"/>
+    </body>
+    <!--壁上赤蓋-->
+    <body pos="0 0 0.0245">
+        <geom type="box" mass="0.01" size="0.006 0.084 0.0005" rgba="1 0 0 1"/>
+    </body>
+</body>
+
+<!-- ###ゴール### -->
+<geom type="cylinder" name="goal_8" pos="1.25 1.67 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+<site type="cylinder" name="goal_8" pos="1.25 1.67 0.015" size="0.014 0.006" rgba="0 1 0 1"/>
+
+
+        
+    </worldbody>
+    <sensor>
+        <touch name = "goal_1" site = "goal_1"/>
+        <touch name = "goal_2" site = "goal_2"/>
+        <touch name = "goal_3" site = "goal_3"/>
+        <touch name = "goal_4" site = "goal_4"/>
+        <touch name = "goal_5" site = "goal_5"/>
+        <touch name = "goal_6" site = "goal_6"/>
+        <touch name = "goal_7" site = "goal_7"/>
+        <touch name = "goal_8" site = "goal_8"/>
+    </sensor>
+</mujoco>
